@@ -60,5 +60,8 @@ class ProfileController extends Controller
 
     public function testtest(){}
 
-    public function enviar(){}
+    public function enviar() : void
+    {
+        if(true){}
+    }
 }
