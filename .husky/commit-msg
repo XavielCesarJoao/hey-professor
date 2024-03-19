@@ -1,5 +1,5 @@
-npm te#!/usr/bin/env sh
-
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
 # Cores
 NC='\033[0m'
