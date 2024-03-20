@@ -58,6 +58,6 @@ class ProfileController extends Controller
 
     public function getIdade () : int
     {
-        return "Ola";
+        return "Ola ";
     }
 }
