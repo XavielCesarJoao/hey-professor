@@ -3,10 +3,11 @@
 
 . "$(dirname -- "$0")/_/husky.sh"
 
-
+echo "PORRAZ";
 # Rodar o php stan
 
 ./vendor/bin/phpstan
+exit 1;
 
 if [ $? -n 0 ]; then
     echo "Opa!!!, Foi mal com PHPSTAN, Arrum e organize o codigo antes de continuar . . . 😉"
