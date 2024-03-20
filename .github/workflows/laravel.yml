@@ -42,4 +42,4 @@ jobs:
     - name: Execute Larastan
       run: vendor/bin/phpstan analyse
     - name: Execute Laravel Pin
-      run: /vendor/bin/pint --test
+      run: vendor/bin/pint --test
