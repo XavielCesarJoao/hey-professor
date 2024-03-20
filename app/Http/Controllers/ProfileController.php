@@ -56,8 +56,8 @@ class ProfileController extends Controller
         return Redirect::to('/');
     }
 
-    public function getIdade () : int
+    public function getIdade(): int
     {
-        return "Ola ";
+        return 1;
     }
 }
