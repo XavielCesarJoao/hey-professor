@@ -27,8 +27,10 @@ jobs:
         mkdir -p database
         touch database/database.sqlite
 
-    - name: Build assets
-      run: npm run build
+    - name: Instalando npm
+      run: npm run install
+    - name: Rodando modo dev
+      run: npm run dev
         
     - name: Execute tests (Unit and Feature tests) via PEST
       env:
