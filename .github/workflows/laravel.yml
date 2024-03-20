@@ -30,8 +30,8 @@ jobs:
     - name: Instalando npm
       run: npm run install
     - name: Rodando modo dev
-      run: npm run dev
-        
+      run: npm run build
+      
     - name: Execute tests (Unit and Feature tests) via PEST
       env:
         DB_CONNECTION: sqlite
