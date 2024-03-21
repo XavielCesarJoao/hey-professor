@@ -14,6 +14,7 @@ class EndWithQuestionMarkRule implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
+        // Used for validation if question has question mark
         if ($value[strlen($value) - 1] != '?') {
             $fail('Are you sure that is a question? It is missing question mark in the end.');
         }
