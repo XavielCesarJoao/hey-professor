@@ -3,6 +3,7 @@ includes:
 
 parameters:
 
+    checkGenericClassInNonGenericObjectType: false
     paths:
         - app/
 
