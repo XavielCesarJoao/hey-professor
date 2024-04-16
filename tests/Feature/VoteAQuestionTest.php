@@ -2,7 +2,7 @@
 
 use App\Models\{Question, User};
 
-use function Pest\Laravel\{actingAs, assertDatabaseHas, post, put};
+use function Pest\Laravel\{actingAs, assertDatabaseHas, post};
 
 it('should be able to vote like a question', closure: function () {
 

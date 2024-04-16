@@ -19,6 +19,7 @@ class QuestionFactory extends Factory
         return [
             //
             'question' => fake()->realText(65),
+            'draft'    => fake()->boolean,
         ];
     }
 }
