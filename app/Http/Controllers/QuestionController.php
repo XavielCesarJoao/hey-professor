@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Rules\EndWithQuestionMarkRule;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
 
 class QuestionController extends Controller
 {
@@ -26,6 +27,13 @@ class QuestionController extends Controller
             ]
         );
 
-        return  to_route('dashboard');
+        return  back();
+    }
+
+    public function index(): view
+    {
+        return view('questions.index', [
+            'questions' => user()->questions,
+        ]);
     }
 }
